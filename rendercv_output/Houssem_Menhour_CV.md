@@ -6,6 +6,7 @@
 - Website: [husmen.xyz](https://husmen.xyz/)
 - LinkedIn: [husmen](https://linkedin.com/in/husmen)
 - GitHub: [husmen](https://github.com/husmen)
+- ORCID: [0000-0001-8920-7830](https://orcid.org/0000-0001-8920-7830)
 
 
 # Personal Statement

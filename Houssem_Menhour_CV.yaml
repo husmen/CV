@@ -9,6 +9,8 @@ cv:
       username: husmen
     - network: GitHub
       username: husmen
+    - network: ORCID
+      username: 0000-0001-8920-7830
   sections:
     personal_statement:
       - >

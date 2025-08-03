@@ -457,6 +457,7 @@
   [#box(original-link("https://husmen.xyz/")[#fa-icon("link", size: 0.9em) #h(0.05cm)husmen.xyz])],
   [#box(original-link("https://linkedin.com/in/husmen")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)husmen])],
   [#box(original-link("https://github.com/husmen")[#fa-icon("github", size: 0.9em) #h(0.05cm)husmen])],
+  [#box(original-link("https://orcid.org/0000-0001-8920-7830")[#fa-icon("orcid", size: 0.9em) #h(0.05cm)0000-0001-8920-7830])],
 )
 #connections(connections-list)
 
