@@ -23,7 +23,7 @@
 #let design-section-titles-small-caps = false
 #let design-links-use-external-link-icon = true
 #let design-text-font-size = 10pt
-#let design-text-leading = 0.6em
+#let design-text-leading = 0.8em
 #let design-text-font-family = "Source Sans 3"
 #let design-text-alignment = "justified"
 #let design-text-date-and-location-column-alignment = right
@@ -53,7 +53,7 @@
 #let design-page-top-margin = 1.5cm
 #let design-page-bottom-margin = 1.5cm
 #let design-page-left-margin = 2cm
-#let design-page-right-margin = 2cm
+#let design-page-right-margin = 1.5cm
 #let design-page-show-last-updated-date = true
 #let design-page-show-page-numbering = true
 #let design-links-underline = false
@@ -457,7 +457,6 @@
   [#box(original-link("https://husmen.xyz/")[#fa-icon("link", size: 0.9em) #h(0.05cm)husmen.xyz])],
   [#box(original-link("https://linkedin.com/in/husmen")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)husmen])],
   [#box(original-link("https://github.com/husmen")[#fa-icon("github", size: 0.9em) #h(0.05cm)husmen])],
-  [#box(original-link("https://orcid.org/0000-0001-8920-7830")[#fa-icon("orcid", size: 0.9em) #h(0.05cm)0000-0001-8920-7830])],
 )
 #connections(connections-list)
 
@@ -467,7 +466,7 @@
 
 
 #one-col-entry(
-  content: [A software engineer with 5 years of experience in computer vision and machine learning.  I have a strong passion for R&D work and excellent programming skills applied across various domains including but not limited to machine vision, computed tomography, data analysis and system programming.  I am about to finish my MSc in Computer Science & Engineering from the University of Oulu and looking for new and interesting challenges to tackle.
+  content: [SW engineer with 5 years in computer vision and applied research; MSc in Computer Science & Engineering \(completing Aug 2025\).  Passionate about building production-grade and highly optimized imaging and ML systems across machine vision, computed tomography, and robotics.  Seeking senior ML\/SW engineering roles in remote sensing to drive R&D and deliver measurable impact.
 ]
 )
 
@@ -477,15 +476,17 @@
 
 #two-col-entry(
   left-content: [
-    #strong[Detection Technology], Algorithms engineer
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Developed a self-supervised deep learning denoising model for CBCT],[Redesigned the architecture and expanded the functionality of our internal X-Ray Image Quality Assessment library],[Optimized performance through parallelization and out-of-core processing],[Improved user & dev experience through CI\/CD automation and modern tooling],)
+    #strong[Detection Technology], Algorithms Engineer
   ],
   right-content: [
-    Espoo, Finland
+    Jan 2023 – present
+  ],
+)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Designing and deploying Image Quality Assessment \(IQA\) and enhancement algorithms for X-ray detectors across R&D and production.])], column-gutter: 0cm)
 
-Jan 2023 – present
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Developed a self-supervised deep learning denoising model for cone-beam CT \(CBCT\)],[Redesigned the architecture and expanded the functionality of our internal X-ray Image Quality Assessment library],[Optimized performance through parallelization and out-of-core processing],[Improved user and developer experience \(DX\) through CI\/CD automation and modern tooling],)
   ],
 )
 
@@ -493,14 +494,14 @@ Jan 2023 – present
 #two-col-entry(
   left-content: [
     #strong[ERG Controls], Software Engineer
-    #v(-design-text-leading)
-
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Developed a GUI and REST API around one of the company's DL models for deployment on Jetson Nano boards with near real-time inference])], column-gutter: 0cm)
   ],
   right-content: [
-    Istanbul, Türkiye
-
-May 2022 – Oct 2022
+    May 2022 – Oct 2022
+  ],
+)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Developed a GUI and REST API around one of the company's DL models for deployment on Jetson Nano boards with near real-time inference])], column-gutter: 0cm)
   ],
 )
 
@@ -508,16 +509,16 @@ May 2022 – Oct 2022
 #two-col-entry(
   left-content: [
     #strong[Visiomex], Computer Vision Engineer
-    #v(-design-text-leading)
-
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Researched and developed custom machine vision solutions])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Computer vision based quality control for the automotive and home appliances industries, applying a statistical approach to optimizing their parameters],[3D reconstruction and inspection using a laser profiling technique and a robotic arm achieving a scanning resolution of 100µm],[Anomaly detection \(CAE, PaDiM\) for defect detection in steel sheets],)
   ],
   right-content: [
-    Istanbul, Türkiye
+    Jul 2020 – Aug 2022
+  ],
+)
+#one-col-entry(
+  content: [
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Researched and developed custom machine vision solutions])], column-gutter: 0cm)
 
-Jul 2020 – Aug 2022
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Computer-vision-based quality control for the automotive and home appliances industries, applying a statistical approach to optimizing their parameters],[3D reconstruction and inspection using a laser profiling technique and a robotic arm achieving a scanning resolution of 100 µm],[Anomaly detection \(CAE, PaDiM\) for steel-sheet defects],)
   ],
 )
 
@@ -525,16 +526,16 @@ Jul 2020 – Aug 2022
 #two-col-entry(
   left-content: [
     #strong[Kocaeli University], Research Intern
-    #v(-design-text-leading)
-
+  ],
+  right-content: [
+    Jun 2018 – Dec 2018
+  ],
+)
+#one-col-entry(
+  content: [
     #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Contributed to ongoing research at the Image Processing Laboratory])], column-gutter: 0cm)
 
 #v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Computer Vision for Autonomous Driving Vehicles],[OCR and Image Classification and Analysis],)
-  ],
-  right-content: [
-    Kocaeli, Türkiye
-
-Jun 2018 – Dec 2028
   ],
 )
 
@@ -544,19 +545,19 @@ Jun 2018 – Dec 2028
 
 
 #one-col-entry(
-  content: [#strong[Programming:] Python, C\#\/.NET, C\/C++, Go; backend dev \(FastAPI, ASP.NET\), desktop dev \(Qt, WPF\)]
+  content: [#strong[Programming:] #strong[Python], C\#\/.NET, C\/#strong[C++], Go; backend dev \(#strong[FastAPI], ASP.NET\), desktop dev \(#strong[Qt], WPF\)]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Data & Analytics:] SQL, NoSQL, PyData Stack, ELK Stack, Kafka, Spark]
+  content: [#strong[Data & Analytics:] SQL, NoSQL, PyData Stack, ELK Stack, #strong[Kafka], #strong[Spark]]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Computer Vision and Machine Learning:] OpenCV, MVTec Halcon, PyTorch, TensorFlow, XGBoost]
+  content: [#strong[Computer Vision and Machine Learning:] #strong[OpenCV], MVTec Halcon, #strong[PyTorch], TensorFlow, XGBoost]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Tools & Technologies:] Linux, Bash, Git, Docker, CI\/CD, ROS, MATLAB, CUDA, OpenCL]
+  content: [#strong[Tools & Technologies:] Linux, Bash, Git, #strong[Docker], Kubernetes, CI\/CD, #strong[ROS], MATLAB, #strong[CUDA], OpenCL]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
@@ -579,13 +580,13 @@ Jun 2018 – Dec 2028
     #strong[University of Oulu], Computer Science & Engineering
   ],
   right-content: [
-    Sep 2022 – Dec 2025
+    Sep 2022 – Aug 2025
   ],
 )
 #block(
   [
     #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([AI specialization, with focus on Machine Learning and Machine Vision],[Thesis on #link("https://oulurepo.oulu.fi/handle/10024/53316")[Deep Learning Based Denoising for CBCT Projection Data]],)
+    #v(design-highlights-top-margin);#highlights([AI specialization, with focus on Machine Learning and Machine Vision],[Thesis on #link("https://oulurepo.oulu.fi/handle/10024/53316")[Deep Learning Based Denoising for CBCT Projection Data]],[Coursework includes Biosignal Processing, Deep Learning, Multiprocessor Programming],)
   ],
   inset: (
     left: design-entry-types-education-entry-degree-column-width + design-entries-horizontal-space-between-columns + design-entries-left-and-right-margin,
@@ -608,7 +609,7 @@ Jun 2018 – Dec 2028
 #block(
   [
     #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([Subjects include Algorithm Analysis, Design Patterns, Distributed Systems, Embedded Systems],[Contributed to 3 peer-reviewed research papers],[Won the Engineering Faculty Achievement Award],)
+    #v(design-highlights-top-margin);#highlights([Coursework includes Algorithm Analysis, Design Patterns, Distributed Systems, Embedded Systems],[Contributed to 3 peer-reviewed research papers, earning me the Engineering Faculty Achievement Award],)
   ],
   inset: (
     left: design-entry-types-education-entry-degree-column-width + design-entries-horizontal-space-between-columns + design-entries-left-and-right-margin,
@@ -628,6 +629,16 @@ Jun 2018 – Dec 2028
     Sep 2014 – Jun 2015
   ],
 )
+#block(
+  [
+    #set par(spacing: 0pt)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Preparatory Class for Foreign Students])], column-gutter: 0cm)
+  ],
+  inset: (
+    left: design-entry-types-education-entry-degree-column-width + design-entries-horizontal-space-between-columns + design-entries-left-and-right-margin,
+    right: design-entries-left-and-right-margin,
+  ),
+)
 
 #v(design-entries-vertical-space-between-entries)
 // YES DATE, YES DEGREE
@@ -644,7 +655,7 @@ Jun 2018 – Dec 2028
 #block(
   [
     #set par(spacing: 0pt)
-    #v(design-highlights-top-margin);#highlights([Left after 2 years for a full scholarship abroad],)
+    #v(design-highlights-top-margin);#highlights([Picked up my passion for computer science and engineering through C programming and digital design classes; left after 2 years for a full scholarship abroad],)
   ],
   inset: (
     left: design-entry-types-education-entry-degree-column-width + design-entries-horizontal-space-between-columns + design-entries-left-and-right-margin,
@@ -658,7 +669,7 @@ Jun 2018 – Dec 2028
 
 
 #one-col-entry(
-  content: [- H. Menhour, et al, #link("https://doi.org/10.1177/01655515211000642")[#emph[Searchable Turkish OCRed historical newspaper collection 1928–1942]], J. Inf. Sci., Mar 2021],
+  content: [- H. Menhour, et al., #link("https://doi.org/10.1177/01655515211000642")[#emph[Searchable Turkish OCRed historical newspaper collection 1928–1942]], J. Inf. Sci., Mar 2021],
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
@@ -683,9 +694,9 @@ Jun 2018 – Dec 2028
 )
 #one-col-entry(
   content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Spatio-Temporal logistic data stream processing In collaboration with CEVA Logistics])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Spatio-temporal logistics data stream processing, in collaboration with CEVA Logistics])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([I built a dockerized infrastructure for a geo data pipeline, including real-time OBD & GPS data ingestion, stream processing with Apache Kafka and Spark],[The rest of the team built on this groundwork for their #link("https://doi.org/10.1016/j.eswa.2021.115755")[real-time anomaly detection research]],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Built a dockerized infrastructure for a geo data pipeline, including real-time OBD & GPS data ingestion, stream processing with Apache #strong[Kafka] and #strong[Spark]],[The rest of the team built on this groundwork for their #link("https://doi.org/10.1016/j.eswa.2021.115755")[real-time anomaly detection research]],)
   ],
 )
 
@@ -700,9 +711,9 @@ Jun 2018 – Dec 2028
 )
 #one-col-entry(
   content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Lead a team representing Kocaeli University at OpenZeka MARC competition for autonomous driving cars])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Led a team representing Kocaeli University at the OpenZeka MARC autonomous driving competition])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Built a complex robotic system for the Jetson TX2 platform using ROS],[Applied Deep Learning to lane tracking \(CNN in TF\) and traffic signs detection \(YOLO\)],[Implemented sensor fusion and Kalman filter for reliable localization and PID controller],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Built a complex robotic system for the Jetson TX2 platform using #strong[ROS]],[Applied Deep Learning to lane tracking \(CNN in TF\) and traffic signs detection \(YOLO\)],[Implemented sensor fusion and Kalman filter for reliable localization and PID controller],)
   ],
 )
 
@@ -719,7 +730,7 @@ Jun 2018 – Dec 2028
   content: [
     #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Havelsan Open Innovation Competition \(PARDUS DoSA\)])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Developed a program for automatic document classification and analysis covering text, images, audio and video file types.],[Won 1st place at Havelsan Open Innovation Competition \(PARDUS DoSA\).],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Developed a program for automatic document classification and analysis covering text, images, audio and video file types.],[Won 1st place at Havelsan Open Innovation Competition \(PARDUS DoSA\)],)
   ],
 )
 
@@ -729,7 +740,7 @@ Jun 2018 – Dec 2028
 
 
 #one-col-entry(
-  content: [- Fundamentals of Accelerated Computing with Modern CUDA C++, #link("https://learn.nvidia.com/certificates?id=HLe92NvRToqjiZRHjbV3Cw")[NVIDIA], May 2025],
+  content: [- Fundamentals of Accelerated Computing with Modern #strong[CUDA] #strong[C++], #link("https://learn.nvidia.com/certificates?id=HLe92NvRToqjiZRHjbV3Cw")[NVIDIA], May 2025],
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
@@ -738,14 +749,6 @@ Jun 2018 – Dec 2028
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
   content: [- Fundamentals of Deep Learning for Computer Vision Certificate, #link("https://courses.nvidia.com/certificates/bf9082c5fb5c42c7b735a20b5dc577f8")[NVIDIA], Feb 2019],
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [- MARC Autonomous Vehicle Training Bootcamp, OpenZeka, Feb 2019],
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [- IEEEXtreme Turkey Competitive Programming Camp, Feb 2017],
 )
 
 
@@ -767,10 +770,6 @@ Jun 2018 – Dec 2028
 #one-col-entry(
   content: [- Baccalaureate Exam with First Class Honours, Jun 2012],
 )
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [- Reached National Olympiad of Mathematics, 2011],
-)
 
 
 == Extracurricular Activities
@@ -786,6 +785,10 @@ Jun 2018 – Dec 2028
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
   content: [- IT Manager at IAESTE Kocaeli, Sep 2017 - Sep 2018],
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [- IEEEXtreme Turkey Competitive Programming, Jan 2017 - Sep 2018],
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
