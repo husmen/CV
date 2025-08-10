@@ -14,44 +14,45 @@ cv:
   sections:
     personal_statement:
       - >
-        SW engineer with 5 years in computer vision and applied research; MSc in Computer Science & Engineering (completing Aug 2025). 
-        Passionate about building production-grade and highly optimized imaging and ML systems across machine vision, computed tomography, and robotics. 
-        Seeking senior ML/SW engineering roles in remote sensing to drive R&D and deliver measurable impact.
+        Senior SW engineer with 5+ years of experience shipping computer vision and machine learning solutions. 
+        I design, evaluate, and deploy ML-backed Python/C++/C# code on industrial production lines.
+        Working knowledge of Go and Kubernetes via personal projects and ready to apply them in production.
+        Seeking roles building reliable and ovservable ML systems for remote sensing or adjacent domains.
     experience:
       - company: Detection Technology
         position: Algorithms Engineer
-        date:
+        # date:
         start_date: 2023-01
         end_date: present
         # location: Espoo, Finland
-        summary: Designing and deploying Image Quality Assessment (IQA) and enhancement algorithms for X-ray detectors across R&D and production.
+        summary: Designed and productionized IQA/enhancement algorithms for X-ray imaging.
         highlights:
-          - Developed a self-supervised deep learning denoising model for cone-beam CT (CBCT)
-          - Redesigned the architecture and expanded the functionality of our internal X-ray Image Quality Assessment library
-          - Optimized performance through parallelization and out-of-core processing
-          - Improved user and developer experience (DX) through CI/CD automation and modern tooling
+          - Developed a self-supervised deep learning denoising model for CBCT
+          - Optimized out‑of‑core/parallel processing for large volume data
+          - Built evaluation pipelines and regression tests; standardized reporting
+          - Improved DX through CI/CD, tooling, and automation
       - company: ERG Controls
         position: Software Engineer
-        date:
+        # date:
         start_date: 2022-05
         end_date: 2022-10
         # location: Istanbul, Türkiye
-        summary: Developed a GUI and REST API around one of the company's DL models for deployment on Jetson Nano boards with near real-time inference
-        highlights:
+        summary: Packaged DL model + REST/GUI on Jetson Nano; enabled near‑real‑time inference and streamlined deployment.
+        # highlights:
       - company: Visiomex
         position: Computer Vision Engineer
-        date:
+        # date:
         start_date: 2020-07
         end_date: 2022-08
-        # location: Istanbul, Türkiye
-        summary: Researched and developed custom machine vision solutions
+        # # location: Istanbul, Türkiye
+        summary: Researched and developed machine vision solutions for industrial inspection; anomaly detection and 3D profiling.
         highlights:
-          - Computer-vision-based quality control for the automotive and home appliances industries, applying a statistical approach to optimizing their parameters
-          - 3D reconstruction and inspection using a laser profiling technique and a robotic arm achieving a scanning resolution of 100 µm
-          - Anomaly detection (CAE, PaDiM) for steel-sheet defects
+          - Anomaly detection (CAE, PaDiM) with standardized evaluation
+          - 3D laser profiling on robotic platforms; 100 µm resolution; calibration/QA
+          - Statistical analysis for parameter optimization to reduce false rejects
       - company: Kocaeli University
         position: Research Intern
-        date:
+        # date:
         start_date: 2018-06
         end_date: 2018-12
         # location: Kocaeli, Türkiye
@@ -63,15 +64,17 @@ cv:
       - label: Programming
         details: Python, C#/.NET, C/C++, Go; backend dev (FastAPI, ASP.NET), desktop dev (Qt, WPF)
       - label: Data & Analytics
-        details: SQL, NoSQL, PyData Stack, ELK Stack, Kafka, Spark
-      - label: Computer Vision and Machine Learning
-        details: OpenCV, MVTec Halcon, PyTorch, TensorFlow, XGBoost
-      - label: Tools & Technologies
-        details: Linux, Bash, Git, Docker, Kubernetes, CI/CD, ROS, MATLAB, CUDA, OpenCL
+        details: SQL/NoSQL; PyData Stack; ELK Stack; Kafka, Spark
+      - label: ML & CV & Data
+        details: OpenCV, MVTec Halcon; PyTorch, TensorFlow, XGBoost
+      - label: Tooling & DevOps
+        details: Linux, Git, CI/CD; Docker, Kubernetes
+      - label: Other Technologies
+        details: ROS, MATLAB, CUDA, OpenCL
       - label: Languages
-        details: 'Arabic (native), English (fluent, TOEFL: 111/120), Turkish (fluent, TÖMER: C1), French (intermediate)'
+        details: 'Arabic (native), English (fluent), Turkish (fluent), French (intermediate)'
       - label: Soft Skills
-        details: Analytical thinking, Adaptability, Self-motivated, Team player
+        details: Analytical thinking, Adaptability, Self-motivated
     education:
       - institution: University of Oulu
         area: Computer Science & Engineering
@@ -114,7 +117,8 @@ cv:
         # location: Boumerdes, Algeria
         summary:
         highlights:
-          - Picked up my passion for computer science and engineering through C programming and digital design classes; left after 2 years for a full scholarship abroad
+          - Picked up my passion for computer science through C programming and digital design classes
+          - left after 2 years for a full scholarship abroad
     # education:
     #   - institution: University of Oulu
     #     area: Computer Science & Engineering
@@ -194,10 +198,10 @@ cv:
         start_date: 2019-09
         end_date: 2020-05
         location:
-        summary: Spatio-temporal logistics data stream processing, in collaboration with CEVA Logistics
+        summary: Spatio-temporal data streaming pipeline for CEVA Logistics
         highlights:
-          - Built a dockerized infrastructure for a geo data pipeline, including real-time OBD & GPS data ingestion, stream processing with Apache Kafka and Spark
-          - The rest of the team built on this groundwork for their [real-time anomaly detection research](https://doi.org/10.1016/j.eswa.2021.115755)
+          - Built a dockerized infrastructure for real-time OBD & GPS data ingestion and processing using Kafka and Spark
+          - Time-series analysis, windowed feature extraction. Groundwork for [real-time anomaly detection](https://doi.org/10.1016/j.eswa.2021.115755)
       - name: '[FourPlusOne](https://github.com/fourplusone41)'
         date:
         start_date: 2018-06
@@ -205,9 +209,7 @@ cv:
         location:
         summary: Led a team representing Kocaeli University at the OpenZeka MARC autonomous driving competition
         highlights:
-          - Built a complex robotic system for the Jetson TX2 platform using ROS
-          - Applied Deep Learning to lane tracking (CNN in TF) and traffic signs detection (YOLO)
-          - Implemented sensor fusion and Kalman filter for reliable localization and PID controller
+          - Jetson TX2 + ROS robotic stack; perception (CNN/YOLO), sensor fusion (Kalman), and controls (PID)
       - name: '[DOCA](https://github.com/husmen/DoCA_GUI)'
         date:
         start_date: 2018-06
@@ -238,6 +240,8 @@ cv:
     hobbies:
       - bullet: Ongoing endeavor to self-host privacy-respecting services on my homelab
       - bullet: A little of everything in nature; travel, hiking, camping, sailing
+    references:
+      - bullet: Available upon request
 design:
   theme: classic
   page:
@@ -268,12 +272,12 @@ design:
     name_font_family: Source Sans 3
     name_font_size: 20pt
     name_bold: true
-    photo_width: 3.5cm
+    # photo_width: 3.5cm
     vertical_space_between_name_and_connections: 0.7cm
     vertical_space_between_connections_and_first_section: 0.7cm
     horizontal_space_between_connections: 0.5cm
     connections_font_family: Source Sans 3
-    separator_between_connections: ''
+    separator_between_connections: '|'
     use_icons_for_connections: true
     alignment: center
   section_titles:
@@ -381,7 +385,7 @@ locale:
     - November
     - December
 rendercv_settings:
-  date: '2025-08-03'
+  date: '2025-08-10'
   render_command:
   bold_keywords:
     - Python
@@ -391,7 +395,9 @@ rendercv_settings:
     - OpenCV
     - Docker
     - ROS
-    - Qt
     - Kafka
     - Spark
-    - FastAPI
+    - computer vision
+    - machine learning
+    - Anomaly detection
+    - Time-series
