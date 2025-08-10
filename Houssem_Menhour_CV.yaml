@@ -14,9 +14,9 @@ cv:
   sections:
     personal_statement:
       - >
-        A software engineer with 5 years of experience in computer vision and machine learning. 
+        A software engineer with 5 years of experience in computer vision and machine learning and a MSc in Computer Science & Engineering. 
         I have a strong passion for R&D work and excellent programming skills applied across various domains including but not limited to machine vision, computed tomography, data analysis and system programming. 
-        I am about to finish my MSc in Computer Science & Engineering from the University of Oulu and looking for new and interesting challenges to tackle.
+        I am currently looking for new challenges to tackle in a senior ML engineering role .
     experience:
       - company: Detection Technology
         position: Algorithms engineer
@@ -53,7 +53,7 @@ cv:
         position: Research Intern
         date:
         start_date: 2018-06
-        end_date: 2028-12
+        end_date: 2018-12
         location: Kocaeli, Türkiye
         summary: Contributed to ongoing research at the Image Processing Laboratory
         highlights:
@@ -185,7 +185,7 @@ cv:
     #     journal: IEEE Access
     #     date: 2019-07
     publications:
-      - bullet: 'H. Menhour, et al, [*Searchable Turkish OCRed historical newspaper collection 1928–1942*](https://doi.org/10.1177/01655515211000642), J. Inf. Sci., Mar 2021'
+      - bullet: 'H. Menhour, et al., [*Searchable Turkish OCRed historical newspaper collection 1928–1942*](https://doi.org/10.1177/01655515211000642), J. Inf. Sci., Mar 2021'
       - bullet: 'S. Eken, et al., [*A Reproducible Educational Plan to Teach Mini Autonomous Race Car Programming*](https://doi.org/10.1177/002072092090787), IJEEE, Feb 2020'
       - bullet: 'S. Eken, et al., [*DoCA: A Content-based Automatic Classification System for Digital Documents*](https://doi.org/10.1109/ACCESS.2019.2930339), IEEE Access, Jul 2019'
     projects:
@@ -196,14 +196,14 @@ cv:
         location:
         summary: Spatio-Temporal logistic data stream processing In collaboration with CEVA Logistics
         highlights:
-          - I built a dockerized infrastructure for a geo data pipeline, including real-time OBD & GPS data ingestion, stream processing with Apache Kafka and Spark
+          - Built a dockerized infrastructure for a geo data pipeline, including real-time OBD & GPS data ingestion, stream processing with Apache Kafka and Spark
           - The rest of the team built on this groundwork for their [real-time anomaly detection research](https://doi.org/10.1016/j.eswa.2021.115755)
       - name: '[FourPlusOne](https://github.com/fourplusone41)'
         date:
         start_date: 2018-06
         end_date: 2019-05
         location:
-        summary: Lead a team representing Kocaeli University at OpenZeka MARC competition for autonomous driving cars
+        summary: Led a team representing Kocaeli University at OpenZeka MARC competition for autonomous driving cars
         highlights:
           - Built a complex robotic system for the Jetson TX2 platform using ROS
           - Applied Deep Learning to lane tracking (CNN in TF) and traffic signs detection (YOLO)
@@ -276,7 +276,7 @@ design:
     use_icons_for_connections: true
     alignment: center
   section_titles:
-    type: with-parial-line
+    type: with-partial-line
     font_family: Source Sans 3
     font_size: 1.4em
     bold: true
