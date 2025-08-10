@@ -9,33 +9,33 @@ cv:
       username: husmen
     - network: GitHub
       username: husmen
-    - network: ORCID
-      username: 0000-0001-8920-7830
+    # - network: ORCID
+    #   username: 0000-0001-8920-7830
   sections:
     personal_statement:
       - >
-        A software engineer with 5 years of experience in computer vision and machine learning and a MSc in Computer Science & Engineering. 
-        I have a strong passion for R&D work and excellent programming skills applied across various domains including but not limited to machine vision, computed tomography, data analysis and system programming. 
-        I am currently looking for new challenges to tackle in a senior ML engineering role .
+        SW engineer with 5 years in computer vision and applied research; MSc in Computer Science & Engineering (completing Aug 2025). 
+        Passionate about building production-grade and highly optimized imaging and ML systems across machine vision, computed tomography, and robotics. 
+        Seeking senior ML/SW engineering roles in remote sensing to drive R&D and deliver measurable impact.
     experience:
       - company: Detection Technology
-        position: Algorithms engineer
+        position: Algorithms Engineer
         date:
         start_date: 2023-01
         end_date: present
-        location: Espoo, Finland
-        summary:
+        # location: Espoo, Finland
+        summary: Designing and deploying Image Quality Assessment (IQA) and enhancement algorithms for X-ray detectors across R&D and production.
         highlights:
-          - Developed a self-supervised deep learning denoising model for CBCT
-          - Redesigned the architecture and expanded the functionality of our internal X-Ray Image Quality Assessment library
+          - Developed a self-supervised deep learning denoising model for cone-beam CT (CBCT)
+          - Redesigned the architecture and expanded the functionality of our internal X-ray Image Quality Assessment library
           - Optimized performance through parallelization and out-of-core processing
-          - Improved user & dev experience through CI/CD automation and modern tooling
+          - Improved user and developer experience (DX) through CI/CD automation and modern tooling
       - company: ERG Controls
         position: Software Engineer
         date:
         start_date: 2022-05
         end_date: 2022-10
-        location: Istanbul, Türkiye
+        # location: Istanbul, Türkiye
         summary: Developed a GUI and REST API around one of the company's DL models for deployment on Jetson Nano boards with near real-time inference
         highlights:
       - company: Visiomex
@@ -43,18 +43,18 @@ cv:
         date:
         start_date: 2020-07
         end_date: 2022-08
-        location: Istanbul, Türkiye
+        # location: Istanbul, Türkiye
         summary: Researched and developed custom machine vision solutions
         highlights:
-          - Computer vision based quality control for the automotive and home appliances industries, applying a statistical approach to optimizing their parameters
-          - 3D reconstruction and inspection using a laser profiling technique and a robotic arm achieving a scanning resolution of 100µm
-          - Anomaly detection (CAE, PaDiM) for defect detection in steel sheets
+          - Computer-vision-based quality control for the automotive and home appliances industries, applying a statistical approach to optimizing their parameters
+          - 3D reconstruction and inspection using a laser profiling technique and a robotic arm achieving a scanning resolution of 100 µm
+          - Anomaly detection (CAE, PaDiM) for steel-sheet defects
       - company: Kocaeli University
         position: Research Intern
         date:
         start_date: 2018-06
         end_date: 2018-12
-        location: Kocaeli, Türkiye
+        # location: Kocaeli, Türkiye
         summary: Contributed to ongoing research at the Image Processing Laboratory
         highlights:
           - Computer Vision for Autonomous Driving Vehicles
@@ -67,7 +67,7 @@ cv:
       - label: Computer Vision and Machine Learning
         details: OpenCV, MVTec Halcon, PyTorch, TensorFlow, XGBoost
       - label: Tools & Technologies
-        details: Linux, Bash, Git, Docker, CI/CD, ROS, MATLAB, CUDA, OpenCL
+        details: Linux, Bash, Git, Docker, Kubernetes, CI/CD, ROS, MATLAB, CUDA, OpenCL
       - label: Languages
         details: 'Arabic (native), English (fluent, TOEFL: 111/120), Turkish (fluent, TÖMER: C1), French (intermediate)'
       - label: Soft Skills
@@ -78,32 +78,32 @@ cv:
         degree: MSc
         date:
         start_date: 2022-09
-        end_date: 2025-12
-        location:
+        end_date: 2025-08
+        # location: Oulu, Finland
         summary:
         highlights:
           - AI specialization, with focus on Machine Learning and Machine Vision
           - 'Thesis on [Deep Learning Based Denoising for CBCT Projection Data](https://oulurepo.oulu.fi/handle/10024/53316)'
+          - Coursework includes Biosignal Processing, Deep Learning, Multiprocessor Programming
       - institution: Kocaeli University
         area: Computer Engineering
         degree: BS
         date:
         start_date: 2015-09
         end_date: 2020-06
-        location:
+        # location: Kocaeli, Türkiye
         summary:
         highlights:
-          - Subjects include Algorithm Analysis, Design Patterns, Distributed Systems, Embedded Systems
-          - Contributed to 3 peer-reviewed research papers
-          - Won the Engineering Faculty Achievement Award
+          - Coursework includes Algorithm Analysis, Design Patterns, Distributed Systems, Embedded Systems
+          - Contributed to 3 peer-reviewed research papers, earning me the Engineering Faculty Achievement Award
       - institution: TÖMER, Kocaeli University
         area: Turkish Language Preparatory Class
         degree:
         date:
         start_date: 2014-09
         end_date: 2015-06
-        location:
-        summary:
+        # location: Kocaeli, Türkiye
+        summary: Preparatory Class for Foreign Students
         highlights:
       - institution: IGEE, Boumerdes University
         area: Electrical & Electronics Engineering
@@ -111,10 +111,10 @@ cv:
         date:
         start_date: 2012-09
         end_date: 2014-06
-        location:
+        # location: Boumerdes, Algeria
         summary:
         highlights:
-          - Left after 2 years for a full scholarship abroad
+          - Picked up my passion for computer science and engineering through C programming and digital design classes; left after 2 years for a full scholarship abroad
     # education:
     #   - institution: University of Oulu
     #     area: Computer Science & Engineering
@@ -194,7 +194,7 @@ cv:
         start_date: 2019-09
         end_date: 2020-05
         location:
-        summary: Spatio-Temporal logistic data stream processing In collaboration with CEVA Logistics
+        summary: Spatio-temporal logistics data stream processing, in collaboration with CEVA Logistics
         highlights:
           - Built a dockerized infrastructure for a geo data pipeline, including real-time OBD & GPS data ingestion, stream processing with Apache Kafka and Spark
           - The rest of the team built on this groundwork for their [real-time anomaly detection research](https://doi.org/10.1016/j.eswa.2021.115755)
@@ -203,7 +203,7 @@ cv:
         start_date: 2018-06
         end_date: 2019-05
         location:
-        summary: Led a team representing Kocaeli University at OpenZeka MARC competition for autonomous driving cars
+        summary: Led a team representing Kocaeli University at the OpenZeka MARC autonomous driving competition
         highlights:
           - Built a complex robotic system for the Jetson TX2 platform using ROS
           - Applied Deep Learning to lane tracking (CNN in TF) and traffic signs detection (YOLO)
@@ -216,23 +216,24 @@ cv:
         summary: Havelsan Open Innovation Competition (PARDUS DoSA)
         highlights:
           - Developed a program for automatic document classification and analysis covering text, images, audio and video file types. 
-          - Won 1st place at Havelsan Open Innovation Competition (PARDUS DoSA).
+          - Won 1st place at Havelsan Open Innovation Competition (PARDUS DoSA)
     certificates:
       - bullet: 'Fundamentals of Accelerated Computing with Modern CUDA C++, [NVIDIA](https://learn.nvidia.com/certificates?id=HLe92NvRToqjiZRHjbV3Cw), May 2025'
       - bullet: 'Data Analyst Nanodegree, [Udacity](https://confirm.udacity.com/HGLG9QD6), Jun 2020'
       - bullet: 'Fundamentals of Deep Learning for Computer Vision Certificate, [NVIDIA](https://courses.nvidia.com/certificates/bf9082c5fb5c42c7b735a20b5dc577f8), Feb 2019'
-      - bullet: 'MARC Autonomous Vehicle Training Bootcamp, OpenZeka, Feb 2019'
-      - bullet: IEEEXtreme Turkey Competitive Programming Camp, Feb 2017
+      # - bullet: 'MARC Autonomous Vehicle Training Bootcamp, OpenZeka, Feb 2019'
+      # - bullet: IEEEXtreme Turkey Competitive Programming Camp, Feb 2017
     accomplishments:
       - bullet: 2nd place at AçıkHack NLP Hackathon, Nov 2019
       - bullet: 1st place at Havelsan's Open Innovation Competition (PARDUS DoSA), Aug 2018
       - bullet: Fully funded Turkey Scholarships Program, Aug 2014
       - bullet: Baccalaureate Exam with First Class Honours, Jun 2012
-      - bullet: Reached National Olympiad of Mathematics, 2011
+      # - bullet: Reached National Olympiad of Mathematics, 2011
     extracurricular_activities:
       - bullet: IT Manager at ESN Oulu, Jan 2023 - Dec 2023
       - bullet: Team Leader at FourPlusOne, Sep 2018 - Sep 2019
       - bullet: IT Manager at IAESTE Kocaeli, Sep 2017 - Sep 2018
+      - bullet: IEEEXtreme Turkey Competitive Programming, Jan 2017 - Sep 2018
       - bullet: Project Manager at Inelectronics Student Club, Jan 2013 - Jun 2014
     hobbies:
       - bullet: Ongoing endeavor to self-host privacy-respecting services on my homelab
@@ -244,7 +245,7 @@ design:
     top_margin: 1.5cm
     bottom_margin: 1.5cm
     left_margin: 2cm
-    right_margin: 2cm
+    right_margin: 1.5cm
     show_page_numbering: true
     show_last_updated_date: true
   colors:
@@ -257,7 +258,7 @@ design:
   text:
     font_family: Source Sans 3
     font_size: 10pt
-    leading: 0.6em
+    leading: 0.8em
     alignment: justified
     date_and_location_column_alignment: right
   links:
@@ -276,7 +277,7 @@ design:
     use_icons_for_connections: true
     alignment: center
   section_titles:
-    type: with-partial-line
+    type: with-parial-line # ignore typo
     font_family: Source Sans 3
     font_size: 1.4em
     bold: true
@@ -292,7 +293,7 @@ design:
     allow_page_break_in_sections: true
     allow_page_break_in_entries: true
     short_second_row: false
-    show_time_spans_in: []
+    show_time_spans_in: ["experience", "education", "projects"]
   highlights:
     bullet: •
     top_margin: 0.25cm
@@ -311,24 +312,24 @@ design:
         SUMMARY
         HIGHLIGHTS
       date_and_location_column_template: |-
-        LOCATION
         DATE
+        LOCATION
     normal_entry:
       main_column_first_row_template: '**NAME**'
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
       date_and_location_column_template: |-
-        LOCATION
         DATE
+        LOCATION
     experience_entry:
       main_column_first_row_template: '**COMPANY**, POSITION'
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
       date_and_location_column_template: |-
-        LOCATION
         DATE
+        LOCATION
     publication_entry:
       main_column_first_row_template: '**TITLE**'
       main_column_second_row_template: |-
@@ -382,4 +383,15 @@ locale:
 rendercv_settings:
   date: '2025-08-03'
   render_command:
-  bold_keywords: []
+  bold_keywords:
+    - Python
+    - PyTorch
+    - CUDA
+    - C++
+    - OpenCV
+    - Docker
+    - ROS
+    - Qt
+    - Kafka
+    - Spark
+    - FastAPI
