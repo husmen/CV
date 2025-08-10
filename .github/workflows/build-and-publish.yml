@@ -1,0 +1,84 @@
+name: Build and Publish CV
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+    paths:
+      - 'Houssem_Menhour_CV.yaml'
+      - 'classic/**'
+      - 'markdown/**'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: write      # required for releases
+  pages: write         # to deploy to GitHub Pages
+  id-token: write      # to authenticate to GitHub Pages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install RenderCV
+        run: |
+          python -m pip install --upgrade pip
+          pip install --no-cache-dir rendercv[full]
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v3
+
+      - name: Build CV with RenderCV
+        run: |
+          # Generate outputs (HTML, PDF, typst, md) into default folder
+          rendercv render Houssem_Menhour_CV.yaml
+
+      - name: Prepare Pages content
+        run: |
+          mkdir -p public
+          # Set the HTML as index for Pages and include PDF and images
+          cp rendercv_output/Houssem_Menhour_CV.html public/index.html
+          cp -f rendercv_output/Houssem_Menhour_CV.pdf public/
+          cp -f rendercv_output/Houssem_Menhour_CV.typ public/ || true
+          cp -f rendercv_output/Houssem_Menhour_CV.md public/ || true
+          cp -f rendercv_output/*.png public/ || true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Attach assets to GitHub Release (on tags)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            rendercv_output/Houssem_Menhour_CV.pdf
+            rendercv_output/Houssem_Menhour_CV.html
+            rendercv_output/Houssem_Menhour_CV.typ
+            rendercv_output/Houssem_Menhour_CV.md
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
