@@ -15,9 +15,8 @@ cv:
     personal_statement:
       - >
         Senior SW engineer with 5+ years of experience shipping computer vision and machine learning solutions. 
-        I design, evaluate, and deploy ML-backed Python/C++/C# code on industrial production lines.
-        Working knowledge of Go and Kubernetes via personal projects and ready to apply them in production.
-        Seeking roles building reliable and ovservable ML systems for remote sensing or adjacent domains.
+        I write mainly Python/C++ and build end‑to‑end pipelines—from preprocessing and feature engineering to model training, evaluation, and deployment—for classical or ML-backed algorithms on industrial production lines.
+        Seeking roles in ML applications and/or software optimization.
     experience:
       - company: Detection Technology
         position: Algorithms Engineer
@@ -401,3 +400,4 @@ rendercv_settings:
     - machine learning
     - Anomaly detection
     - Time-series
+    - Biosignal Processing
