@@ -44,18 +44,11 @@ jobs:
 
       - name: Build CV with RenderCV
         run: |
-          # Generate outputs (HTML, PDF, typst, md) into default folder
-          rendercv render Houssem_Menhour_CV.yaml
+          make render
 
       - name: Prepare Pages content
         run: |
-          mkdir -p public
-          # Set the HTML as index for Pages and include PDF and images
-          cp rendercv_output/Houssem_Menhour_CV.html public/index.html
-          cp -f rendercv_output/Houssem_Menhour_CV.pdf public/
-          cp -f rendercv_output/Houssem_Menhour_CV.typ public/ || true
-          cp -f rendercv_output/Houssem_Menhour_CV.md public/ || true
-          cp -f rendercv_output/*.png public/ || true
+          make pages
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -66,11 +59,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            rendercv_output/Houssem_Menhour_CV.pdf
-            rendercv_output/Houssem_Menhour_CV.html
-            rendercv_output/Houssem_Menhour_CV.typ
-            rendercv_output/Houssem_Menhour_CV.md
+          files: rendercv_output/*.{pdf,html,typ,md}
 
   deploy:
     needs: build

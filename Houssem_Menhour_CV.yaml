@@ -2,7 +2,7 @@ cv:
   name: Houssem Menhour
   location: 00210 Helsinki, Finland
   email: husmen93@gmail.com
-  phone: +358 46 xxx xxxx 
+  phone: +358 46 xxx xxxx
   website: https://husmen.xyz
   social_networks:
     - network: LinkedIn
@@ -14,9 +14,9 @@ cv:
   sections:
     personal_statement:
       - >
-        Senior SW engineer with 5+ years of experience shipping computer vision and machine learning solutions. 
-        I write mainly Python/C++ and build end‑to‑end pipelines—from preprocessing and feature engineering to model training, evaluation, and deployment—for classical or ML-backed algorithms on industrial production lines.
-        Seeking roles in ML applications and/or software optimization.
+        Senior SW engineer with 5+ years shipping end-to-end solutions in computer vision and machine learning. 
+        I excell at Python/C++, build robust data and model pipelines, package and deploy across edge and cloud.
+        Seeking new roles in ML applications and/or software optimization.
     experience:
       - company: Detection Technology
         position: Algorithms Engineer
@@ -86,7 +86,13 @@ cv:
         highlights:
           - AI specialization, with focus on Machine Learning and Machine Vision
           - 'Thesis on [Deep Learning Based Denoising for CBCT Projection Data](https://oulurepo.oulu.fi/handle/10024/53316)'
-          - Coursework includes Biosignal Processing, Deep Learning, Multiprocessor Programming
+          - >
+            Coursework includes 
+            Biosignal Processing, 
+            Deep Learning, 
+            Multiprocessor Programming, 
+            Big Data Processing,
+          # NLP
       - institution: Kocaeli University
         area: Computer Engineering
         degree: BS
@@ -96,7 +102,13 @@ cv:
         # location: Kocaeli, Türkiye
         summary:
         highlights:
-          - Coursework includes Algorithm Analysis, Design Patterns, Distributed Systems, Embedded Systems
+          - >
+            Coursework includes 
+            Algorithm Analysis, 
+            Design Patterns, 
+            Distributed Systems, 
+            Embedded Systems,
+          # Data Analysis
           - Contributed to 3 peer-reviewed research papers, earning me the Engineering Faculty Achievement Award
       - institution: TÖMER, Kocaeli University
         area: Turkish Language Preparatory Class
@@ -396,8 +408,11 @@ rendercv_settings:
     - ROS
     - Kafka
     - Spark
+    # - NLP
+    # - ELK
+    # - OCR
     - computer vision
     - machine learning
-    - Anomaly detection
-    - Time-series
-    - Biosignal Processing
+    - anomaly detection
+    # - Time-series
+    # - Biosignal Processing
