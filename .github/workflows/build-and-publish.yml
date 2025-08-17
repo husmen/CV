@@ -55,11 +55,15 @@ jobs:
         with:
           path: public
 
-      - name: Attach assets to GitHub Release (on tags)
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v2
+      - name: Upload rendered artifacts for release
+        uses: actions/upload-artifact@v4
         with:
-          files: rendercv_output/*.{pdf,html,typ,md}
+          name: rendercv_output
+          path: |
+            rendercv_output
+
+  # attachment of artifacts moved to the `release` job below; artifacts
+  # are uploaded from this job so the `release` job can download them.
 
   deploy:
     needs: build
@@ -71,3 +75,36 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Create a GitHub Release and attach built artifacts. This runs on tag pushes
+  # (will create a normal release using the tag name) and on pushes to `main`
+  # (will create a prerelease named `main-<run_number>`). It runs after build
+  # so artifacts in `rendercv_output` and `public` are available.
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download rendered artifacts from build
+        uses: actions/download-artifact@v4
+        with:
+          name: rendercv_output
+          path: downloaded_artifacts
+
+      - name: Create or update GitHub Release and attach artifacts
+        uses: softprops/action-gh-release@v2
+        with:
+          # Use the tag name if this is a tag event, otherwise create a stable name
+          tag_name: "${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || format('main-{0}', github.run_number) }}"
+          name: "${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || format('Main build #{0}', github.run_number) }}"
+          # Mark releases from `main` as prereleases
+          prerelease: ${{ github.ref == 'refs/heads/main' }}
+          # Attach common output files and the prepared pages directory
+          files: |
+            downloaded_artifacts/rendercv_output/*.pdf
+            downloaded_artifacts/rendercv_output/*.html
+            downloaded_artifacts/rendercv_output/*.typ
+            downloaded_artifacts/rendercv_output/*.md
