@@ -104,7 +104,7 @@ jobs:
           prerelease: ${{ github.ref == 'refs/heads/main' }}
           # Attach common output files and the prepared pages directory
           files: |
-            downloaded_artifacts/rendercv_output/*.pdf
-            downloaded_artifacts/rendercv_output/*.html
-            downloaded_artifacts/rendercv_output/*.typ
-            downloaded_artifacts/rendercv_output/*.md
+            downloaded_artifacts/*.pdf
+            downloaded_artifacts/*.html
+            downloaded_artifacts/*.typ
+            downloaded_artifacts/*.md
