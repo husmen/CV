@@ -34,4 +34,3 @@ To publish a new release:
 
 1. Update `Houssem_Menhour_CV.yaml`.
 2. Push a tag like `v1.2.0` to trigger a release with assets.
-

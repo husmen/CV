@@ -4,7 +4,7 @@ CV := Houssem_Menhour_CV.yaml
 OUT := rendercv_output
 PUBLIC := public
 
-.PHONY: all render pages clean
+.PHONY: all render render-public pages clean
 
 all: render pages
 
@@ -24,6 +24,10 @@ render:
 	else \
 		rendercv render $(CV); \
 	fi
+
+render-public:
+	@echo "Rendering public CV: $(CV)"
+	@rendercv render "$(CV)"
 
 pages:
 	@echo "Preparing content for GitHub Pages in $(PUBLIC)"

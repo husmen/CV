@@ -207,4 +207,4 @@ marimo/_lsp/
 __marimo__/
 archive/
 public/
-render_output/
+rendercv_output/
