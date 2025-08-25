@@ -1,8 +1,11 @@
 # Simple Makefile to render the CV and prepare GitHub Pages content
 
-CV := Houssem_Menhour_CV.yaml
+CV := Houssem_Menhour_CV
 OUT := rendercv_output
 PUBLIC := public
+ARCHIVE := archive/submitted/
+
+ARGS?=
 
 .PHONY: all render render-public pages clean
 
@@ -11,24 +14,28 @@ all: render pages
 # Render the main CV. If a .env file exists, substitute EMAIL and PHONE
 # from it into a temporary copy of the input YAML before calling rendercv.
 render:
-	@echo "Rendering CV: $(CV)"
+	@echo "Rendering CV: $(CV).yaml"
 	@if [ -f .env ] ; then \
 		echo "Found .env file — substituting EMAIL/PHONE into a temporary input and rendering"; \
 		mkdir -p $(OUT); \
 		# read variables without sourcing the file (avoid executing malformed lines) \
 		EMAIL="$$(sed -n 's/^EMAIL=//p' .env)"; \
 		PHONE="$$(sed -n 's/^PHONE=//p' .env)"; \
-		sed -E -e "s|^([[:space:]]*email:).*|\\1 $${EMAIL}|" -e "s|^([[:space:]]*phone:).*|\\1 $${PHONE}|" "$(CV)" > "$(OUT)/_render_input.yaml"; \
+		sed -E -e "s|^([[:space:]]*email:).*|\\1 $${EMAIL}|" -e "s|^([[:space:]]*phone:).*|\\1 $${PHONE}|" "$(CV).yaml" > "$(OUT)/_render_input.yaml"; \
 		rendercv render "$(OUT)/_render_input.yaml"; \
 		rm -f "$(OUT)/_render_input.yaml"; \
 	else \
-		rendercv render $(CV); \
+		rendercv render $(CV).yaml; \
 	fi
 
 render-public:
-	@echo "Rendering public CV: $(CV)"
-	@rendercv render "$(CV)"
+	@echo "Rendering public CV: $(CV).yaml"
+	@rendercv render "$(CV).yaml"
 
+cp:
+	@echo "Copying rendered CV to archive"
+	mkdir -p $(ARCHIVE)
+	cp -f $(OUT)/$(CV).pdf  $(ARCHIVE)/$(CV)_$(ARGS).pdf
 pages:
 	@echo "Preparing content for GitHub Pages in $(PUBLIC)"
 	mkdir -p $(PUBLIC)

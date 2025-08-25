@@ -1,0 +1,25 @@
+# LLM Instructions
+
+- Review each job post and compare it to my CV.
+- Update my personal statement accordingly, always mention Seniority & 5 years experience, maximum 5 lines.
+- Update my cover letter accordingly, but don't just parrot every keyword, 1 page.
+- Use my old covers and any additional context I provide as reference
+- Respect my actual experience and writing style, do not use dashes, or overuse hyphens
+- Keep the tone professional and enthusiastic, do not overly flatter the employer
+- Make sure to answer any questions asked in the job post
+- Highlight the best capabilities for each role if specified by the post e.g.:
+  - Python, distributed systems, Containers, Logging infra, interest in Go... for backend roles
+  - Python, C++, ML, CV, thesis, data pipelines... for ML/CV roles
+  - Python, data pipelines, Kafka, Spark, ELK, interest in Scala... for data roles
+  - C#/.NET, industrial application deployment... for windows desktop roles
+- Roles I want: Software Engineer, Backend Engineer, Machine Learning Engineer, Computer Vision Engineer, Algorithm Engineer, Data Scientist
+- Roles I don't want: Frontend/Mobile/Web Developer, Embedded Engineer, DevOps Engineer, Fullstack Developer
+- Tech stack I like: Python, Go, C++, C#, Linux, Docker, Kubernetes, Kafka, Spark
+- Tech stack I don't want: JavaScript, TypeScript, Java, SpringBoot
+- Use the following structure for cover letters:
+  - Salutation
+  - Intro paragraph: why this role, why this company
+  - Body paragraphs: my relevant experience, skills, projects
+  - Secondary paragraph: Answer any questions asked
+  - Closing paragraph: cultural fit, logistics, thanks
+  - Signature
