@@ -14,10 +14,11 @@ cv:
   sections:
     personal_statement:
       - >
-        Senior SW engineer with 5+ years shipping computer vision and machine learning solutions to production across edge and cloud. 
-        Proficient in Python and C/C++, I build end‑to‑end data pipelines, and strengthen teams with solid tooling, rigorous evaluation, and automation. 
-        Completing an MSc in Computer Science & Engineering (AI focus) at the University of Oulu (Aug 2025).
-        Seeking new ML/DS role, where I can apply my skills to a new domain and enjoy solving challenging problems.
+        Senior SW Engineer with 5+ years of experience delivering custom-built computer vision solutions and data-intensive systems for industrial inspection and X-ray imaging. 
+        Proficient in Python, C++, and the extensive PyData ecosystem, I research and develop both classical and ML-backed algorithms, design and maintain end-to-end data pipelines, 
+        and deploy solutions across edge and cloud environments. I ensure modern tooling, rigorous testing, CI, and observability throughout the lifecycle, translating complex data challenges into robust and maintainable products. 
+        I enjoy working alongside talented teams to solve challenging problems and continuously improve. 
+        Completing an MSc in Computer Science and Engineering with a focus on AI at the University of Oulu, and eager to apply my skills in a new CV/ML role.
     experience:
       - company: Detection Technology
         position: Algorithms Engineer
@@ -37,7 +38,7 @@ cv:
         start_date: 2022-05
         end_date: 2022-10
         # location: Istanbul, Türkiye
-        summary: Packaged DL model + REST/GUI on Jetson Nano; enabled near‑real‑time inference and streamlined deployment.
+        summary: Packaged DL model + REST/GUI on Jetson Nano; enabled near real‑time inference and streamlined deployment.
         # highlights:
       - company: Visiomex
         position: Computer Vision Engineer
@@ -47,10 +48,10 @@ cv:
         # # location: Istanbul, Türkiye
         summary: Researched and developed machine vision solutions for industrial inspection; anomaly detection and 3D profiling.
         highlights:
-          - Anomaly detection (CAE, PaDiM) with standardized evaluation
-          - 3D laser profiling on robotic platforms; 100 µm resolution; calibration/QA
-          - Statistical analysis for parameter optimization to reduce false rejects
-          - ELK based internal logging and analytics; automated reporting
+          - Designed custom 2D/3D computer vision, data processing and statistical analysis solutions
+          - Developed optimized desktop apps for industrial environments with PLC, camera system, and robot integrations
+          - Created a dockerized internal logging and analytics infrastructure with APIs and observability dashboards
+          - Lead ML efforts including data collection/annotation, model research, training, evaluation, and deployment
       - company: Kocaeli University
         position: Research Intern
         # date:
@@ -63,15 +64,17 @@ cv:
           - OCR and Image Classification and Analysis 
     skills:
       - label: Programming
-        details: Python, C#/.NET, C/C++, Go; backend dev (FastAPI, ASP.NET), desktop dev (Qt, WPF)
-      - label: Data & Analytics
-        details: SQL/NoSQL; PyData Stack; ELK Stack; Kafka, Spark
-      - label: ML & CV & Data
-        details: OpenCV, MVTec Halcon; PyTorch, TensorFlow, XGBoost
+        details: Python, C/C++, C#/.NET, Go; FastAPI; Qt, WPF
+      # - label: Data & Analytics
+      #   details: SQL/NoSQL; PyData Stack; ELK Stack; Kafka, Spark
+      - label: CV & ML & DS
+        details: OpenCV, Kornia, PyTorch, PyData Stack, Kafka, Spark, # XGBoost, Prophet, MVTec Halcon
       - label: Tooling & DevOps
-        details: Linux, Git, CI/CD; Docker, Kubernetes
+        details: Linux, Git, CI/CD; Docker
+      # - label: developing
+      #   details: Scala, Go, Kubernetes
       - label: Other Technologies
-        details: ROS, MATLAB, CUDA, OpenCL
+        details: ROS, CUDA, OpenCL, MATLAB
       - label: Languages
         details: 'Arabic (native), English (fluent), Turkish (fluent), French (intermediate)'
       - label: Soft Skills
@@ -82,7 +85,7 @@ cv:
         degree: MSc
         date:
         start_date: 2022-09
-        end_date: 2025-08
+        end_date: 2025
         # location: Oulu, Finland
         summary:
         highlights:
@@ -90,12 +93,13 @@ cv:
           - 'Thesis on [Deep Learning Based Denoising for CBCT Projection Data](https://oulurepo.oulu.fi/handle/10024/53316)'
           - >
             Coursework includes 
-            Biosignal Processing, 
-            Deep Learning, 
-            Multiprocessor Programming, 
+            Image Processing, 
+            Deep Learning,
             Big Data Processing,
-          # NLP
+            Multiprocessor Programming
+          # Biosignal Processing
           # Biosignal Processing (ECG, EMG, EEG), 
+          # NLP
       - institution: Kocaeli University
         area: Computer Engineering
         degree: BS
@@ -109,9 +113,9 @@ cv:
             Coursework includes 
             Algorithm Analysis, 
             Design Patterns, 
-            Distributed Systems, 
-            Data Analysis
-          # Embedded Systems,
+            Data Analysis,
+            Distributed Systems
+          # Embedded Systems
           - Contributed to 3 peer-reviewed research papers, earning me the Engineering Faculty Achievement Award
       - institution: TÖMER, Kocaeli University
         area: Turkish Language Preparatory Class
@@ -399,14 +403,19 @@ locale:
     - November
     - December
 rendercv_settings:
-  date: '2025-08-10'
+  # date: '2025-08-10'
   render_command:
   bold_keywords:
     - Python
+    - PyData
     - PyTorch
-    - CUDA
+    # - CUDA
     - C++
+    # - C#
+    # - .NET
+    # - WPF
     - OpenCV
+    - Kornia
     - Docker
     - ROS
     - Kafka
@@ -414,12 +423,19 @@ rendercv_settings:
     # - NLP
     # - ELK
     # - OCR
+    - Image Processing
     - computer vision
+    - Compuiter Vision
     - machine learning
+    - Machine Learning
+    - machine vision
+    - Machine Vision
     - anomaly detection
     - deep learning
+    - Deep Learning
     # - Big Data Processing
     # - Data Analysis
     # - Distributed Systems
+    # - distributed systems
     # - Time-series
     # - Biosignal Processing
